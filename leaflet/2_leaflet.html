@@ -8,16 +8,13 @@
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        #map { position:absolute; top:0; bottom:0; width:50%; }
     </style>
 </head>
 <body>
 
 <style>
-#map {
-    position: fixed;
-    width:50%;
-}
+    
 #features {
     width: 50%;
     margin-left: 50%;
@@ -47,12 +44,12 @@ section:last-child {
         <h3>Welcome to Los Angeles</h3>
         <p>This is Los Angeles</p>
     </section>
-    <section id='boyleheights'>
-        <h3>The neighborhood of Boyle Heights</h3>
-        <p>Let's head down to the nieghborhood of Boyle Heights</p>
+    <section id='echopark'>
+        <h3>The neighborhood of Echo Park</h3>
+        <p>Let's head down to the neighborhood of Echo Park</p>
     </section>
-    <section id='centralave'>
-        <h3>Down Central Ave</h3>
+    <section id='echoparklake'>
+        <h3>Echo Park Lake</h3>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Central_Avenue_jazz_marker_-_Los_Angeles.jpg/320px-Central_Avenue_jazz_marker_-_Los_Angeles.jpg">
         <p>Or maybe check LA's Jazz history on Central Ave. Image Source - Wikipedia</p>
     </section>
@@ -102,14 +99,17 @@ var chapters = {
         center: [34.0622, -118.2680],
         zoom: 9,
     },
-    'boyleheights': {
-        center: [34.0323, -118.2120],
-        zoom: 13,
+        
+    'echopark': {
+        center: [34.07217761639549, -118.2576084136963],
+        zoom: 14,
     },
-    'centralave': {
-        center: [34.00672273556911, -118.25617347611393],
-        zoom: 18,
-    },
+    
+    'echoparklake': {
+        center: [34.0716888276001, -118.25965762138367],
+        zoom: 16,
+    },    
+
     'chavezravine': {
         center: [34.081204647758256, -118.23789479255632],
         zoom: 15
